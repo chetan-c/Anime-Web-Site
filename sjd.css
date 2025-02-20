@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 250px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url(banner1.jpg);
+    display: flex;
+    align-items: center;
+    animation-name: hello;
+    animation-duration: 12s;
+    animation-timing-function: initial;
+    animation-iteration-count: infinite;
+    
+    
+}
+@keyframes hello {
+    0%{background-image: url(banner2.jpg);}
+    35%{background-image: url(banner3.jpg);}
+    75%{background-image: url(img2.jpeg);}
+    
+}
