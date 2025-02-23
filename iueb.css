@@ -3,7 +3,11 @@
     margin: 0;
     
 }
-
+body {
+    min-height: 100dvh; 
+    width: 100%;
+    margin: 0;
+}
 
 .imges img{
     display: flex;
@@ -26,10 +30,14 @@
 .button {
   display: flex;
   flex-wrap: wrap;
-    justify-content: end;
-    padding: 10 30px;
+  justify-content: end;
    text-decoration: none;
 }
+.button ,.buttons{
+padding: 0 50px;
+color: solid white;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -37,7 +45,6 @@ html{
    
     display: flex;
     align-items: center;
-   margin-left: 70%;
    position: absolute;
    top: 5%;
 
@@ -109,7 +116,7 @@ color: #000000;
     align-items: center;
 }
 @keyframes mayni {
-    0%{background-image: url("https://t3.ftcdn.net/jpg/07/32/10/90/360_F_732109080_4lXwGofazqAiysUpcCnrbflsNOl9EMdW.jpg");}
+    0%{background-image: url("demonslayer-banner.jpg");}
     35%{background-image: url("https://4kwallpapers.com/images/wallpapers/anime-girl-dream-3840x1080-10024.jpg");}
     75%{background-image: url("https://demonslayerstuff.com/wp-content/uploads/2024/01/Demon-Slayer-Stuff-Merch-Store-Banner.jpg");}
     
@@ -180,7 +187,7 @@ color: #000000;
     margin-top: 10px;
     padding: 20px;
     text-decoration: none;
-    color:  #dfd3d3;
+    color:  #fff;
     font-size: 20px;
     cursor: pointer;
     transition: transfrom ease;
@@ -256,3 +263,60 @@ transform: scale(1.1);
     border-radius: 20px;
     width: 1100px;
 }
+@media (max-width: 768px){
+    
+        .imges img {
+            position: relative;
+            top: 0%;
+            margin: 0 auto;
+            display: block;
+        }
+        .text {
+            position: relative;
+            left: 0;
+            top: 0;
+            text-align: center;
+        }
+         body {
+            overflow-x: hidden;
+        }
+        .search{
+            display: flex;
+            flex-direction: column;
+            height: 23px;
+            width: 180px;
+            border-radius: 10px;
+            position: absolute;
+            left: 30%;
+            top: 6%;
+        }
+        .logo{
+            height: 50px;
+            width: 100px;
+            
+            position: absolute;
+            top: 3%;
+            left: 1%;
+        }
+        
+            .buttons{
+                height: 30px;
+                padding: 0 55px;
+                margin-top: 3px;
+                padding: 20px;
+                text-decoration: none;
+                color:  #fff;
+                font-size: 10px;
+                cursor: pointer;
+                transition: transfrom ease;
+            }
+
+            .container{ 
+                height: 150px;
+                width:100%;
+            }
+
+            
+            
+    }
+   
